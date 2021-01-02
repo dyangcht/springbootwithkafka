@@ -1,3 +1,4 @@
 com/javainuse/controller/ApacheKafkaWebController.class
+com/javainuse/service/Consumer.class
 com/javainuse/service/KafkaSender.class
 com/javainuse/SpringBootHelloWorldApplication.class

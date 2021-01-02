@@ -1,0 +1,187 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------< com.javainuse:SpringBootApacheKafkaHelloWorld >------------
+[INFO] Building SpringBootApacheKafkaHelloWorld 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ SpringBootApacheKafkaHelloWorld ---
+[INFO] Deleting /Users/dyangcht/opt/redhat/ocp4/SpringBootApacheKafkaHelloWorld/target
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:1.5.3.RELEASE:run (default-cli) > test-compile @ SpringBootApacheKafkaHelloWorld >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ SpringBootApacheKafkaHelloWorld ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ SpringBootApacheKafkaHelloWorld ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /Users/dyangcht/opt/redhat/ocp4/SpringBootApacheKafkaHelloWorld/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ SpringBootApacheKafkaHelloWorld ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ SpringBootApacheKafkaHelloWorld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:1.5.3.RELEASE:run (default-cli) < test-compile @ SpringBootApacheKafkaHelloWorld <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.5.3.RELEASE:run (default-cli) @ SpringBootApacheKafkaHelloWorld ---
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2021-01-02 16:49:42.841  INFO 32056 --- [           main] c.j.SpringBootHelloWorldApplication      : Starting SpringBootHelloWorldApplication on Chengde-iMac.local with PID 32056 (/Users/dyangcht/opt/redhat/ocp4/SpringBootApacheKafkaHelloWorld/target/classes started by dyangcht in /Users/dyangcht/opt/redhat/ocp4/SpringBootApacheKafkaHelloWorld)
+2021-01-02 16:49:42.843  INFO 32056 --- [           main] c.j.SpringBootHelloWorldApplication      : No active profile set, falling back to default profiles: default
+2021-01-02 16:49:42.931  INFO 32056 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b9df6cc: startup date [Sat Jan 02 16:49:42 CST 2021]; root of context hierarchy
+2021-01-02 16:49:43.600  INFO 32056 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$fb66dace] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-02 16:49:43.822  INFO 32056 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-01-02 16:49:43.831  INFO 32056 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-01-02 16:49:43.832  INFO 32056 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2021-01-02 16:49:43.899  INFO 32056 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-02 16:49:43.900  INFO 32056 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 978 ms
+2021-01-02 16:49:44.021  INFO 32056 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-01-02 16:49:44.025  INFO 32056 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-01-02 16:49:44.025  INFO 32056 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-01-02 16:49:44.026  INFO 32056 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-01-02 16:49:44.026  INFO 32056 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-01-02 16:49:44.326  INFO 32056 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b9df6cc: startup date [Sat Jan 02 16:49:42 CST 2021]; root of context hierarchy
+2021-01-02 16:49:44.378  INFO 32056 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/javainuse-kafka/producer],methods=[GET]}" onto public java.lang.String com.javainuse.controller.ApacheKafkaWebController.producer(java.lang.String)
+2021-01-02 16:49:44.379  INFO 32056 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-01-02 16:49:44.380  INFO 32056 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-02 16:49:44.408  INFO 32056 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-02 16:49:44.408  INFO 32056 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-02 16:49:44.440  INFO 32056 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-02 16:49:44.557  INFO 32056 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-01-02 16:49:44.573  INFO 32056 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2021-01-02 16:49:44.587  INFO 32056 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-01-02 16:49:44.591  INFO 32056 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-01-02 16:49:44.621  INFO 32056 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-01-02 16:49:44.621  INFO 32056 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-01-02 16:49:44.662  INFO 32056 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-01-02 16:49:44.666  INFO 32056 --- [           main] c.j.SpringBootHelloWorldApplication      : Started SpringBootHelloWorldApplication in 7.036 seconds (JVM running for 10.087)
+2021-01-02 16:49:44.750  INFO 32056 --- [    group-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator 192.168.1.102:9092 (id: 2147483647 rack: null) for group group.
+2021-01-02 16:49:44.752  INFO 32056 --- [    group-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group
+2021-01-02 16:49:44.752  INFO 32056 --- [    group-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2021-01-02 16:49:44.752  INFO 32056 --- [    group-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group
+2021-01-02 16:49:44.759  INFO 32056 --- [    group-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group with generation 1
+2021-01-02 16:49:44.760  INFO 32056 --- [    group-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [my-topic-0] for group group
+2021-01-02 16:49:44.775  INFO 32056 --- [    group-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[my-topic-0]
+2021-01-02 16:49:46.752  INFO 32056 --- [       Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b9df6cc: startup date [Sat Jan 02 16:49:42 CST 2021]; root of context hierarchy
+2021-01-02 16:49:46.753  INFO 32056 --- [       Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2021-01-02 16:49:46.779  INFO 32056 --- [    group-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2021-01-02 16:49:46.779  INFO 32056 --- [       Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+[INFO] ---------------------------
